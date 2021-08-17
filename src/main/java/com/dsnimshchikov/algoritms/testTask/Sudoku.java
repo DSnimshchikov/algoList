@@ -1,6 +1,5 @@
-package com.example.demo.tests;
+package com.dsnimshchikov.algoritms.testTask;
 
-import sun.reflect.Reflection;
 
 import java.util.ArrayList;
 import java.util.HashMap;

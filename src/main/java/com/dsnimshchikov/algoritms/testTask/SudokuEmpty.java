@@ -1,4 +1,4 @@
-package com.example.demo.tests;
+package com.dsnimshchikov.algoritms.testTask;
 
 /*
 * 1) Строки не должны содержать цифры от 1 до 9 без повторений

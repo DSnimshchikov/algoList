@@ -1,4 +1,4 @@
-package com.example.demo.algoritms;
+package com.dsnimshchikov.algoritms.dp;
 
 class MinTicketCosts {
 
@@ -23,14 +23,5 @@ class MinTicketCosts {
     //Get N day before cost or zero after that add cost for current day
     private int getCostForNDayBefore(int[] dp, int dayNumber, int dayBefore, int cost) {
         return dp[Math.max(dayNumber - dayBefore, 0)] + cost;
-    }
-
-    public static void main(String[] args) {
-        int[][] days1 = {{1, 4, 6, 8, 9, 365}};
-        int[][] costs = {{2, 7, 15}};
-
-        MinTicketCosts minC = new MinTicketCosts();
-        int j = minC.minCostTickets(days1[0], costs[0]);
-        System.out.println("Min cost = " + j);
     }
 }
