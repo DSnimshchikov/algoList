@@ -21,3 +21,23 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml
+/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml
+/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml
+/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml
+/.idea/.gitignore
+/.idea/algoList.iml
+/.idea/compiler.xml
+/.idea/encodings.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
+/out/production/algoList/com/dsnimshchikov/algoritms/dp/README.MD
+/out/production/algoList/com/dsnimshchikov/algoritms/lists/README.MD
+/out/production/algoList/com/dsnimshchikov/algoritms/sort/readme.md
+/out/production/algoList/com/dsnimshchikov/algoritms/tree/reamde.MD
+/out/production/algoList/com/dsnimshchikov/algoritms/unsorted/readme.md
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst

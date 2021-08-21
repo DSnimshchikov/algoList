@@ -4,7 +4,7 @@ public class BuildTreeFromStringRecursive extends AbstractTree {
 
     TreeNode<String> makeTree(String input) {
         //Получаем позицию для старта
-        int lengthWithOutLastBreak = input.length();
+        int lengthWithOutLastBracket = input.length();
         int i = 1;
         while (i < input.length() && input.charAt(i) != '(') {
             i++;
@@ -19,7 +19,7 @@ public class BuildTreeFromStringRecursive extends AbstractTree {
         i++;
         i = getLeftTreeEndPosition(input, i);
         //Осталась только значимая часть левого значения. Пример: input= 6(1), далее leftValue = 1
-        if (i >= lengthWithOutLastBreak) {
+        if (i >= lengthWithOutLastBracket) {
             String leftValue = input.substring(value.length() + 1, input.length() - 1);
             root.left = new TreeNode<>(leftValue);
             return root;
@@ -36,20 +36,20 @@ public class BuildTreeFromStringRecursive extends AbstractTree {
     }
 
     private int getLeftTreeEndPosition(String input, int i) {
-        int breaksSum = 1;
-        while (i < input.length() && breaksSum > 0) {
+        int bracketsSum = 1;
+        while (i < input.length() && bracketsSum > 0) {
             char c = input.charAt(i);
             switch (c) {
                 case '(':
-                    breaksSum++;
+                    bracketsSum++;
                     break;
                 case ')':
-                    breaksSum--;
+                    bracketsSum--;
                     break;
             }
             i++;
         }
-        if (breaksSum != 0) {
+        if (bracketsSum != 0) {
             throw new IllegalArgumentException("Incorrect brackets in input, check it: " + input);
         }
         return i;
