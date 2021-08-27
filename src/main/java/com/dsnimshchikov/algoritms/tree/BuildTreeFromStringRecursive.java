@@ -2,11 +2,14 @@ package com.dsnimshchikov.algoritms.tree;
 
 public class BuildTreeFromStringRecursive extends AbstractTree {
 
+    public static final char OPEN_BRACKET = '(';
+    public static final char CLOSE_BRACKET = ')';
+
     TreeNode<String> makeTree(String input) {
         //Получаем позицию для старта
         int lengthWithOutLastBracket = input.length();
         int i = 1;
-        while (i < input.length() && input.charAt(i) != '(') {
+        while (i < input.length() && input.charAt(i) != OPEN_BRACKET) {
             i++;
         }
         String value = input.substring(0, i);
@@ -40,10 +43,10 @@ public class BuildTreeFromStringRecursive extends AbstractTree {
         while (i < input.length() && bracketsSum > 0) {
             char c = input.charAt(i);
             switch (c) {
-                case '(':
+                case OPEN_BRACKET:
                     bracketsSum++;
                     break;
-                case ')':
+                case CLOSE_BRACKET:
                     bracketsSum--;
                     break;
             }
